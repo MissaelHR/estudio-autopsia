@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"      
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+        <p:growl id="growl" sticky="true" showDetail="true"/>
+        <ui:composition template="./../../Template/plantillaBase.xhtml">
+            <ui:define name="top">
+                <p:menubar style="float: right; width: 40%">
+                    <p:menuitem value="Inicio" icon="ui-icon-home" outcome="/Views/inicio"/>
+                    <p:submenu label="Sesión" icon="ui-icon-person">
+                        <p:menuitem value="Iniciar" outcome="/Views/login"  icon="ui-icon-unlocked"/>
+                        <p:menuitem value="Cerrar" outcome="/Views/cerrar" icon="ui-icon-locked"/>
+                    </p:submenu>
+                    <p:submenu label="Eliminar" icon="ui-icon-close">
+                        <p:menuitem value="Encuesta" outcome="/Views/especialista/encuesta" icon="ui-icon-close"/>
+                    </p:submenu>
+                    <p:submenu label="Consultar" icon="ui-icon-search">
+                        <p:menuitem value="Encuestas" outcome="/Views/especialista/encuesta" icon="ui-icon-search" />
+                        <p:menuitem value="Reglas asociación" outcome="/Views/resultado" icon="ui-icon-search" />
+                        <p:menuitem value="Redes bayesianas" outcome="/Views/resultadoBayes" icon="ui-icon-search" />
+                        <p:menuitem value="Minería de patrones emergentes" outcome="/Views/resultadoEPM" icon="ui-icon-search" />
+                        <p:menuitem value="Descubrimiento de Subgrupos" outcome="/Views/resultadoSubgrupos" icon="ui-icon-search" />
+                        <p:menuitem value="Graficas" outcome="/Views/especialista/graficas" icon="ui-icon-disk" />
+                    </p:submenu>
+                    <p:submenu label="Crear" icon="ui-icon-disk">
+                        <p:menuitem value="Reglas asociación" outcome="/Views/especialista/modelo" icon="ui-icon-disk" />
+                        <p:menuitem value="Redes bayesianas" outcome="/Views/especialista/modeloBayes" icon="ui-icon-disk" />
+                        <p:menuitem value="Conjuntos de datos" outcome="/Views/especialista/datasets"  icon="ui-icon-disk"/>
+                        <p:menuitem value="Minería de patrones emergentes" outcome="/Views/especialista/modeloEPM" icon="ui-icon-disk" />
+                        <p:menuitem value="Descubrimiento de Subgrupos" outcome="/Views/especialista/modeloSG" icon="ui-icon-disk" />
+                        <p:menuitem value="Graficas" outcome="/Views/especialista/graficas" icon="ui-icon-disk" />
+                    </p:submenu>
+                </p:menubar>
+            </ui:define>
+            <ui:define name="left">
+                <p:menu style="float: right; width: 100%">
+                    <p:menuitem value="Inicio" icon="ui-icon-home" outcome="/Views/inicio"/>
+                    <p:submenu label="Sesión" icon="ui-icon-person">
+                        <p:menuitem value="Iniciar" outcome="/Views/login"  icon="ui-icon-unlocked"/>
+                        <p:menuitem value="Cerrar" outcome="/Views/cerrar" icon="ui-icon-locked"/>
+                    </p:submenu>
+                    <p:submenu label="Eliminar" icon="ui-icon-close">
+                        <p:menuitem value="Encuesta" outcome="/Views/especialista/encuesta" icon="ui-icon-close"/>
+                    </p:submenu>
+                    <p:submenu label="Consultar" icon="ui-icon-search">
+                        <p:menuitem value="Encuestas" outcome="/Views/especialista/encuesta" icon="ui-icon-search" />
+                        <p:menuitem value="Reglas asociación" outcome="/Views/resultado" icon="ui-icon-search" />
+                        <p:menuitem value="Redes bayesianas" outcome="/Views/resultadoBayes" icon="ui-icon-search" />
+                        <p:menuitem value="Minería de patrones emergentes" outcome="/Views/resultadoEPM" icon="ui-icon-search" />
+                        <p:menuitem value="Descubrimiento de Subgrupos" outcome="/Views/resultadoSubgrupos" icon="ui-icon-search" />
+                        <p:menuitem value="Graficas" outcome="/Views/especialista/graficas" icon="ui-icon-disk" />
+
+                    </p:submenu>
+                    <p:submenu label="Crear" icon="ui-icon-disk">
+                        <p:menuitem value="Reglas asociación" outcome="/Views/especialista/modelo" icon="ui-icon-disk" />
+                        <p:menuitem value="Redes bayesianas" outcome="/Views/especialista/modeloBayes" icon="ui-icon-disk" />
+                        <p:menuitem value="Conjuntos de datos" outcome="/Views/especialista/datasets"  icon="ui-icon-disk"/>
+                        <p:menuitem value="Minería de patrones emergentes" outcome="/Views/especialista/modeloEPM" icon="ui-icon-disk" />
+                        <p:menuitem value="Descubrimiento de Subgrupos" outcome="/Views/especialista/modeloSG" icon="ui-icon-disk" />
+                        <p:menuitem value="Graficas" outcome="/Views/especialista/graficas" icon="ui-icon-disk" />
+                        <p:menuitem value="Gráficas por hospital" outcome="/Views/especialista/graficasHospital" icon="ui-icon-disk" />
+                    </p:submenu>
+                </p:menu>
+            </ui:define>
+
+
+
+
+
+
+            <ui:define name="content">
+
+                <p:panelGrid id="dgReglas" columns="2" style="vertical-align: top" styleClass="noBordes">
+                    <p:column width="20%">
+
+                    </p:column>
+                    <p:column>
+                           <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="Último grado de estudios" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod12" type="bar" model="#{oSGJB.barModel12}"  />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>                                 
+                            </p:fieldset>
+                        </h:form>   
+                        
+                         <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="Área a la que pertenece" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod12" type="bar" model="#{oSGJB.barModel13}"  />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>                                 
+                            </p:fieldset>
+                        </h:form>   
+                        
+                        
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="Años de práctica" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style="width:800px;">
+
+                                        <p:chart id="chtMod2" type="bar" model="#{oSGJB.barModel2}"/>
+
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+
+                            </p:fieldset>
+                        </h:form>                        
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="Número de participación u observación de autopsias" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style="width:800px;">
+
+                                        <p:chart id="chtMod3" type="bar" model="#{oSGJB.barModel3}"/>
+
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+
+                            </p:fieldset>
+                        </h:form>   
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Los hallazgos encontrados en las autopsias pueden ser discrepantes con los diagnósticos clínicos?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="2" styleClass="noBordes" columnClasses="left,right" style="width:800px;">
+                                        <p:chart id="chtMod1" type="bar" model="#{oSGJB.barModel4}" />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+
+                            </p:fieldset>
+                        </h:form>
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Los hallazgos encontrados en las autopsias dan origen a casos de arbitraje?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style="width:800px;">
+                                        <p:chart id="chtMod4" type="bar" model="#{oSGJB.barModel5}" />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+
+                            </p:fieldset>
+                        </h:form>
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Los hallazgos encontrados en las autopsias dan origen a casos de demandas?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style="width:800px;">
+                                        <p:chart id="chtMod4" type="bar" model="#{oSGJB.barModel6}" />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+
+                            </p:fieldset>
+                        </h:form>
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Cuáles son los motivos, las causas y las circunstancias para que solicite una autopsia?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod7" type="bar" model="#{oSGJB.barModel7}" />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+                                <ul>
+                                    <ui:repeat value="#{oSGJB.opciones_preg14}" var="data">
+                                        <li style="border-bottom: none;">#{data.resp} - #{data.sresp}</li>
+                                    </ui:repeat>
+                                </ul>
+
+                            </p:fieldset>
+                        </h:form>        
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Cuál considera que es la principal causa de rechazo por parte del familiar para realizar una autopsia?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod8" type="bar" model="#{oSGJB.barModel8}"/>
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+                                <ul>
+                                    <ui:repeat value="#{oSGJB.opciones_preg17}" var="data">
+                                        <li style="border-bottom: none;">#{data.resp} - #{data.sresp}</li>
+                                    </ui:repeat>
+                                </ul>
+
+                            </p:fieldset>
+                        </h:form>
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Cuáles consideras que son las causas por las que no se realizan suficientes autopsias en su hospital?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width:800px;">
+                                        <p:chart id="chtMod9" type="bar" model="#{oSGJB.barModel9}"  />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+                                <ul>
+                                    <ui:repeat value="#{oSGJB.opciones_preg18}" var="data">
+                                        <li style="border-bottom: none;">#{data.resp} - #{data.sresp}</li>
+                                    </ui:repeat>
+                                </ul>
+                            </p:fieldset>
+                        </h:form>
+
+                        <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Quién considera que debe solicitar la autopsia?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod10" type="bar" model="#{oSGJB.barModel10}"  />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+                                  <ul>
+                                    <ui:repeat value="#{oSGJB.opciones_preg19}" var="data">
+                                        <li style="border-bottom: none;">#{data.resp} - #{data.sresp}</li>
+                                    </ui:repeat>
+                                </ul>
+                            </p:fieldset>
+                        </h:form>    
+                        
+                         <h:form>
+                            <p:growl id="growl" showDetail="true" showSummary=""/>
+                            <p:fieldset id="pnl"  legend="¿Cuál sería la forma, método o recurso que pudiera funcionar en forma eficiente para la solcitud de un estudio de autopsia?" toggleable="true" class="siBordes">
+                                <div id="graficos">
+                                    <p:panelGrid columns="1" styleClass="noBordes" columnClasses="left,right" style=" width: 800px;">
+                                        <p:chart id="chtMod10" type="bar" model="#{oSGJB.barModel11}"  />
+
+                                    </p:panelGrid>
+                                </div>
+                                <br/>
+                                  <ul>
+                                    <ui:repeat value="#{oSGJB.opciones_preg21}" var="data">
+                                        <li style="border-bottom: none;">#{data.resp} - #{data.sresp}</li>
+                                    </ui:repeat>
+                                </ul>
+                            </p:fieldset>
+                        </h:form>    
+
+
+                    </p:column>
+                </p:panelGrid>
+
+            </ui:define>
+
+
+
+
+
+
+
+
+
+        </ui:composition>
+    </body>
+</html>
