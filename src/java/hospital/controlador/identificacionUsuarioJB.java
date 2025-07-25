@@ -1,15 +1,10 @@
 package hospital.controlador;
 
-import hospital.clasificacion.model.clasificacionUtilidades;
 import hospital.modelo.IdentificacionUsuario;
 import hospital.modelo.centroHospitalario;
-import hospital.modelo.clasificadora;
-import hospital.modelo.encuesta;
 import hospital.modelo.institucion;
 import hospital.modelo.localidad;
 import hospital.modelo.municipio;
-import hospital.modelo.respuesta;
-import hospital.modelo.typeClasificado;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

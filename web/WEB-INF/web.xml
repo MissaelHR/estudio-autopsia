@@ -6,11 +6,11 @@
     </context-param>
     <context-param>
         <param-name>pwddb</param-name>
-        <param-value>1234</param-value>
+        <param-value>password</param-value>
     </context-param>
     <context-param>
         <param-name>urldb</param-name>
-        <param-value>jdbc:postgresql://localhost/encuesta</param-value>
+        <param-value>jdbc:postgresql://postgres:5432/encuesta</param-value>
     </context-param>
     <context-param>
         <param-name>driverdb</param-name>
@@ -28,7 +28,8 @@
         <param-name>misFicheros</param-name>
         <!-- <param-value>E://Tesis//Código//EstudioAutopsia//corpus/</param-value>-->
         <!--  <param-value>D://Documentos//Tesis//3er semestre//Tesis//Código//EstudioAutopsia//corpus/</param-value>-->
-        <param-value>C:\Users\Araceli\Desktop\MAESTRÍA\EstudioAutopsiaFunciona\corpus\</param-value>
+        <!-- <param-value>C:\Users\Araceli\Desktop\MAESTRÍA\EstudioAutopsiaFunciona\corpus\</param-value> -->
+        <param-value>/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus</param-value>
     </context-param>
     <context-param>
         <param-name>primefaces.FONT_AWESOME</param-name>
