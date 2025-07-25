@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: encuesta
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - red_autopsias
+
+  tomcat:
+    build: .
+    container_name: autopsias
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      - TZ=America/Mexico_City
+    networks:
+      - red_autopsias
+
+volumes:
+  postgres_data:
+
+networks:
+  red_autopsias:
+    driver: bridge

@@ -10,36 +10,16 @@ package hospital.subgrupos.model;
  * @author Araceli
  */
 
-import framework.GUI.GUI;
-import framework.GUI.Model;
-import framework.exceptions.IllegalActionException;
-import framework.utils.Utils;
 import hospital.controlador.configuracionAppControler;
 import hospital.datos.AccesoDatos;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import javax.faces.context.FacesContext;
-import hospital.epm.model.Reglas;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.logging.Level;
-import javax.faces.application.FacesMessage;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import static jdk.nashorn.internal.objects.NativeString.replace;
-import keel.Dataset.Attributes;
-import keel.Dataset.DatasetException;
-import keel.Dataset.HeaderFormatException;
 import keel.Dataset.Instance;
-import keel.Dataset.InstanceSet;
 import org.vikamine.kernel.data.Attribute;
 import org.vikamine.kernel.data.Ontology;
 import org.vikamine.kernel.data.creators.DataFactory;
@@ -54,10 +34,6 @@ import org.vikamine.kernel.subgroup.search.SDMap;
 import org.vikamine.kernel.subgroup.search.SDSimpleTask;
 import org.vikamine.kernel.subgroup.selectors.DefaultSGSelector;
 import org.vikamine.kernel.subgroup.target.SelectorTarget;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 import weka.experiment.InstanceQuery;
 
 public class subgruposUtilidades {
@@ -235,7 +211,7 @@ public class subgruposUtilidades {
     public List<datosGrafica> obtenerReglasC1(int claseSeleccionada, int medidaSeleccionada, List<ReglasSG> reglasSGList) throws Exception, Throwable {
         ArrayList<datosGrafica> datos = new ArrayList<>();
 
-        Ontology onto2 = DataFactory.createOntology(new File("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\C\\SDMap\\centro_hospitalario\\matriz_binaria3.arff"));
+        Ontology onto2 = DataFactory.createOntology(new File("/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/SD/C/SDMap/centro_hospitalario/matriz_binaria3.arff"));
         System.out.println("Instancias en conjunto de datos: " + onto2.getNumInstances());
         // ReglasSG rsg = new ReglasSG();
 
@@ -380,7 +356,7 @@ public class subgruposUtilidades {
     public List<datosGrafica> obtenerReglasD1(int claseSeleccionada, int medidaSeleccionada, List<ReglasSG> reglasSGList) throws Exception {
         ArrayList<datosGrafica> datos = new ArrayList<>();
 
-        Ontology onto = DataFactory.createOntology(new File("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\\\SD\\D\\SDMap\\centro_hospitalario\\vista_minable2.arff"));
+        Ontology onto = DataFactory.createOntology(new File("/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/SD/D/SDMap/centro_hospitalario/vista_minable2.arff"));
         System.out.println("Instancias en conjunto de datos: " + onto.getNumInstances());
         // ReglasSG rsg = new ReglasSG();
 

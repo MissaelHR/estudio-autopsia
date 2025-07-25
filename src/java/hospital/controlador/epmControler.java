@@ -10,8 +10,6 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.Phrase;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.Image;
-import com.lowagie.text.Jpeg;
 import framework.GUI.GUI;
 import hospital.epm.model.epmUtilidades;
 
@@ -1235,14 +1233,14 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner7();
 
-                                    String confianzaCIMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/C/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMCC);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP7();
 
-                                    String confianzaCDMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/C/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMCC);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1256,14 +1254,14 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner7();
 
-                                    String confianzaDIMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/D/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMCC);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP7();
 
-                                    String confianzaDDMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/D/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMCC);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
