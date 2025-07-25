@@ -58,3 +58,20 @@ db-down:
 
 # Limpiar imagenes
 delete-images-none: docker rmi $(docker images -f "dangling=true" -q)
+
+# Para formato .dump binario generado con pg_dump -Fc
+DUMP_FILE := db/backup.dump
+
+db-import:
+	@echo "Importando archivo .dump binario..."
+	docker cp $(DUMP_FILE) $(PG_CONTAINER):/tmp/backup.dump
+	docker exec -e PGPASSWORD=$(PG_PASSWORD) $(PG_CONTAINER) \
+		pg_restore -U $(PG_USER) -d $(PG_DB) --clean /tmp/backup.dump
+
+# Crear un dump completo en formato .dump binario
+db-dump-bin:
+	@echo "Creando dump binario de la base de datos..."
+	docker exec -e PGPASSWORD=$(PG_PASSWORD) $(PG_CONTAINER) \
+		pg_dump -U $(PG_USER) -d $(PG_DB) -F c -f /tmp/backup.dump
+	docker cp $(PG_CONTAINER):/tmp/backup.dump db/backup.dump
+	@echo "Dump binario guardado en db/backup.dump"
