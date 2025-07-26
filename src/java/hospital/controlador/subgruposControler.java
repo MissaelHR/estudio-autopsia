@@ -359,7 +359,7 @@ public class subgruposControler extends Model {
                     switch (modeloSeleccionado) {
                         case 1: //SDMap
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\C\\SDMap\\centro_hospitalario\\matriz_binaria3.arff";
+                            ruta = "corpus/SD/C/SDMap/centro_hospitalario/matriz_binaria3.arff";
                             setReglas2(oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado));//guardar reglas sini interpretar
                             reglasPDFA = oSGUtilidades.obtenerReglasC1(claseSeleccionada, medidaSeleccionada, getReglas2());//guardar reglas interpretadas
@@ -367,7 +367,7 @@ public class subgruposControler extends Model {
                             break;
                         case 2://BSD
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\C\\BSD\\centro_hospitalario\\matriz_binaria3.arff";
+                            ruta = "corpus/SD/C/BSD/centro_hospitalario/matriz_binaria3.arff";
                             oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado);
                             reglasPDFA = oSGUtilidades.obtenerReglasC1(claseSeleccionada, medidaSeleccionada, getReglas2());
@@ -375,7 +375,7 @@ public class subgruposControler extends Model {
                             break;
                         case 3://BS
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\C\\BeamSearch\\centro_hospitalario\\matriz_binaria3.arff";
+                            ruta = "corpus/SD/C/BeamSearch/centro_hospitalario/matriz_binaria3.arff";
                             oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado);
                             reglasPDFA = oSGUtilidades.obtenerReglasC1(claseSeleccionada, medidaSeleccionada, getReglas2());
@@ -387,7 +387,7 @@ public class subgruposControler extends Model {
                     switch (modeloSeleccionado) {
                         case 1: //SDMap
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\D\\SDMap\\centro_hospitalario\\vista_minable2.arff";
+                            ruta = "corpus/SD/D/SDMap/centro_hospitalario/vista_minable2.arff";
                             setReglas2(oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado));
                             reglasPDFA = oSGUtilidades.obtenerReglasD1(claseSeleccionada, medidaSeleccionada, getReglas2());
@@ -395,7 +395,7 @@ public class subgruposControler extends Model {
                             break;
                         case 2://BSD
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\D\\BSD\\centro_hospitalario\\vista_minable2.arff";
+                            ruta = "corpus/SD/D/BSD/centro_hospitalario/vista_minable2.arff";
                             setReglas2(oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado));
                             reglasPDFA = oSGUtilidades.obtenerReglasD1(claseSeleccionada, medidaSeleccionada, getReglas2());
@@ -403,7 +403,7 @@ public class subgruposControler extends Model {
                             break;
                         case 3://BS
                             System.out.println("modelo" + modeloSeleccionado);
-                            ruta = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\D\\BeamSearch\\centro_hospitalario\\vista_minable2.arff";
+                            ruta = "corpus/SD/D/BeamSearch/centro_hospitalario/vista_minable2.arff";
                             setReglas2(oSGUtilidades.obtenerModelo(ruta, claseSeleccionada, etiquetaSeleccionada, numeroSeleccionado,
                                     reglasSeleccionadas, medidaSeleccionada, modeloSeleccionado));
                             reglasPDFA = oSGUtilidades.obtenerReglasD1(claseSeleccionada, medidaSeleccionada, getReglas2());
@@ -442,7 +442,7 @@ public class subgruposControler extends Model {
                     //oSGUtilidades.crearModelo(claseSeleccionada2);//PARARÍA RUTA DEL ARCHIVO
 
                     //ruta en donde se encuentra el modelo                        
-                    String rutaC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\SD\\C\\SDMap\\centro_hospitalario\\matriz_binaria3.arff";
+                    String rutaC = "corpus/SD/C/SDMap/centro_hospitalario/matriz_binaria3.arff";
 
                     switch (getModeloSeleccionado()) { //algoritmo
                         case 1://SDMap - envia los parametros y el modelo al metodo que trabjara con el framework
@@ -475,7 +475,7 @@ public class subgruposControler extends Model {
                 case "d":
                     System.out.println("_____Entro a D con el modelo seleccionado: " + getModeloSeleccionado());
 
-                    String rutaD = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\\\SD\\D\\SDMap\\centro_hospitalario\\vista_minable2.arff";
+                    String rutaD = "corpus//SD/D/SDMap/centro_hospitalario/vista_minable2.arff";
 
                     System.out.println("Entro en D");
                     switch (getModeloSeleccionado()) {

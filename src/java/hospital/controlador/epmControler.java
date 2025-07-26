@@ -112,8 +112,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloCiEPMiner(1, query_CFmr);
                             oEPMUtilidades.crearModeloCDGCP(1, query_CFmr);
                             //ruta en donde se encuentra el modelo
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Frm_sol_aut\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Frm_sol_aut\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Frm_sol_aut/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Frm_sol_aut/modelo.dat";
 
                             switch (modeloSeleccionado) { //algoritmo
 
@@ -142,8 +142,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloDiEPMiner(1, query_DFmr);
                             oEPMUtilidades.crearModeloDDGCP(1, query_DFmr);
 
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Frm_sol_aut\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Frm_sol_aut\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Frm_sol_aut/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Frm_sol_aut/modelo.dat";
 
                             System.out.println("Entro en D");
                             switch (modeloSeleccionado) {
@@ -181,8 +181,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloCiEPMiner(2, query_CMed);
                             oEPMUtilidades.crearModeloCDGCP(2, query_CMed);
 
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Med_aut\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Med_aut\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Med_aut/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Med_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -203,8 +203,8 @@ public class epmControler extends Model {
                             break;
                         case "d":
                             System.out.println("Entro a d");
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Med_aut\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Med_aut\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Med_aut/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Med_aut/modelo.dat";
                             oEPMUtilidades.crearModeloDiEPMiner(2, query_DMed);
                             oEPMUtilidades.crearModeloDDGCP(2, query_DMed);
 
@@ -238,8 +238,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloCiEPMiner(3, query_CPer);
                             oEPMUtilidades.crearModeloCDGCP(3, query_CPer);
 
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Per_sol_aut\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Per_sol_aut\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Per_sol_aut/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Per_sol_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -261,8 +261,8 @@ public class epmControler extends Model {
                         case "d":
                             oEPMUtilidades.crearModeloDiEPMiner(3, query_DPer);
                             oEPMUtilidades.crearModeloDDGCP(3, query_DPer);
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Per_sol_aut\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Per_sol_aut\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Per_sol_aut/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Per_sol_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -294,8 +294,8 @@ public class epmControler extends Model {
                             //dataInstanceNo = oEPMUtilidades.devuelveInstancias(query_CNo);
                             oEPMUtilidades.crearModeloCiEPMiner(4, query_CNo);
                             oEPMUtilidades.crearModeloCDGCP(4, query_CNo);
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\No_hosp\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\No_hosp\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/No_hosp/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/No_hosp/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -318,8 +318,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloDiEPMiner(4, query_DNo);
                             oEPMUtilidades.crearModeloDDGCP(4, query_DNo);
 
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\No_hosp\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\No_hosp\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/No_hosp/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/No_hosp/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -350,8 +350,8 @@ public class epmControler extends Model {
 
                             oEPMUtilidades.crearModeloCiEPMiner(5, query_CRechazo);
                             oEPMUtilidades.crearModeloCDGCP(5, query_CRechazo);
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Rechazo_fam\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Rechazo_fam\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Rechazo_fam/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Rechazo_fam/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -373,8 +373,8 @@ public class epmControler extends Model {
                         case "d":
                             oEPMUtilidades.crearModeloDiEPMiner(5, query_DRechazo);
                             oEPMUtilidades.crearModeloDDGCP(5, query_DRechazo);
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Rechazo_fam\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Rechazo_fam\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Rechazo_fam/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Rechazo_fam/modelo.dat";
 
                             //dataInstanceNo = oEPMUtilidades.devuelveInstancias(query_DRechazo);
                             switch (modeloSeleccionado) {
@@ -405,8 +405,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloCiEPMiner(6, query_CMccn);
                             oEPMUtilidades.crearModeloCDGCP(6, query_CMccn);
 
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_no_aut\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_no_aut\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Mcc_no_aut/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Mcc_no_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -428,8 +428,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloDiEPMiner(6, query_DMccn);
                             oEPMUtilidades.crearModeloDDGCP(6, query_DMccn);
 
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_no_aut\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_no_aut\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Mcc_no_aut/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Mcc_no_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
 
@@ -459,8 +459,8 @@ public class epmControler extends Model {
                             oEPMUtilidades.crearModeloCiEPMiner(7, query_CMcc);
                             oEPMUtilidades.crearModeloCDGCP(7, query_CMcc);
 
-                            String rutaTra = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_aut\\modelo.dat";
-                            String rutaTraDG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_aut\\modelo.dat";
+                            String rutaTra = "corpus/EPM/C/iEPMiner/Mcc_aut/modelo.dat";
+                            String rutaTraDG = "corpus/EPM/C/DGCP/Mcc_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -482,8 +482,8 @@ public class epmControler extends Model {
                         case "d":
                             oEPMUtilidades.crearModeloDiEPMiner(7, query_DMcc);
                             oEPMUtilidades.crearModeloDDGCP(7, query_DMcc);
-                            String rutaTra2 = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_aut\\modelo.dat";
-                            String rutaTra2DG = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_aut\\modelo.dat";
+                            String rutaTra2 = "corpus/EPM/D/iEPMiner/Mcc_aut/modelo.dat";
+                            String rutaTra2DG = "corpus/EPM/D/DGCP/Mcc_aut/modelo.dat";
 
                             switch (modeloSeleccionado) {
                                 case 1:
@@ -521,7 +521,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIF = "corpus/EPM/C/iEPMiner/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner1();
 
@@ -535,7 +535,7 @@ public class epmControler extends Model {
 
                                     break;
                                 case 2:
-                                    String confianzaCDF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDF = "corpus/EPM/C/DGCP/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP1();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDF);
@@ -553,7 +553,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1:
-                                    String confianzaDIF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIF = "corpus/EPM/D/iEPMiner/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
 
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner1();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
@@ -565,7 +565,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDF = "corpus/EPM/D/DGCP/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP1();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDF);
@@ -586,7 +586,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMed = "corpus/EPM/C/iEPMiner/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner2();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMed);
@@ -596,7 +596,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaCDMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMed = "corpus/EPM/C/DGCP/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP2();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMed);
@@ -613,7 +613,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1:
-                                    String confianzaDIMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMed = "corpus/EPM/D/iEPMiner/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner2();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMed);
@@ -623,7 +623,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMed = "corpus/EPM/D/DGCP/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP2();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMed);
@@ -644,7 +644,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIP = "corpus/EPM/C/iEPMiner/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner3();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIP);
@@ -654,7 +654,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2://DGCP
-                                    String confianzaCDP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDP = "corpus/EPM/C/DGCP/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP3();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDP);
@@ -671,7 +671,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1://iEPMiner
-                                    String confianzaDIP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIP = "corpus/EPM/D/iEPMiner/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner3();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIP);
@@ -681,7 +681,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2://DGCP
-                                    String confianzaDDP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDP = "corpus/EPM/D/DGCP/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP3();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDP);
@@ -702,7 +702,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMine
-                                    String confianzaCIN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIN = "corpus/EPM/C/iEPMiner/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner4();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIN);
@@ -712,7 +712,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2://DCGP
-                                    String confianzaCDN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDN = "corpus/EPM/C/DGCP/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP4();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDN);
@@ -729,7 +729,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1:
-                                    String confianzaDIN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIN = "corpus/EPM/D/iEPMiner/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner4();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIN);
@@ -739,7 +739,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDN = "corpus/EPM/D/DGCP/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP4();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDN);
@@ -759,7 +759,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIR = "corpus/EPM/C/iEPMiner/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner5();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIR);
@@ -769,7 +769,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaCDR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDR = "corpus/EPM/C/DGCP/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP5();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDR);
@@ -786,7 +786,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1:
-                                    String confianzaDIR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIR = "corpus/EPM/D/iEPMiner/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner5();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIR);
@@ -796,7 +796,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDR = "corpus/EPM/D/DGCP/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP5();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDR);
@@ -816,7 +816,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMCCNO = "corpus/EPM/C/iEPMiner/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner6();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMCCNO);
@@ -826,7 +826,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2://DGCP
-                                    String confianzaCDMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMCCNO = "corpus/EPM/C/DGCP/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP6();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMCCNO);
@@ -843,7 +843,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1://iEPMiner
-                                    String confianzaDIMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMCCNO = "corpus/EPM/D/iEPMiner/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner6();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMCCNO);
@@ -853,7 +853,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMCCNO = "corpus/EPM/D/DGCP/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP6();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMCCNO);
@@ -874,7 +874,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1: //iEPMiner
-                                    String confianzaCIMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMCC = "corpus/EPM/C/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner7();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMCC);
@@ -884,7 +884,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaCDMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMCC = "corpus/EPM/C/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_DGCP7();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMCC);
@@ -901,7 +901,7 @@ public class epmControler extends Model {
 
                             switch (modeloSeleccionado) {
                                 case 1:
-                                    String confianzaDIMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMCC = "corpus/EPM/D/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner7();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMCC);
@@ -911,7 +911,7 @@ public class epmControler extends Model {
                                     crearPDF(modeloSeleccionado, confianzaAll);
                                     break;
                                 case 2:
-                                    String confianzaDDMCC = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMCC = "corpus/EPM/D/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_DGCP7();
                                     reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMCC);
@@ -952,7 +952,7 @@ public class epmControler extends Model {
 
                                 case 1: //iEPMiner
                                     System.out.println("modelo" + modeloSeleccionado);
-                                    String confianzaCIF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIF = "corpus/EPM/C/iEPMiner/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner1(); //Ruta del modelo.dat
 
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIF);//guarda la confianza de cada regla
@@ -963,7 +963,7 @@ public class epmControler extends Model {
                                     System.out.println("modelo" + modeloSeleccionado);
                                     pathModelo = oConfApp.getPahtModel_c_DGCP1();
 
-                                    String confianzaCDF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDF = "corpus/EPM/C/DGCP/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDF);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
 
@@ -977,7 +977,7 @@ public class epmControler extends Model {
                             switch (modeloSeleccionado) {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner1();
-                                    String confianzaDIF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIF = "corpus/EPM/D/iEPMiner/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIF);
 
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
@@ -985,7 +985,7 @@ public class epmControler extends Model {
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP1();
 
-                                    String confianzaDDF = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Frm_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDF = "corpus/EPM/D/DGCP/Frm_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDF);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1003,13 +1003,13 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner2();
 
-                                    String confianzaCIMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMed = "corpus/EPM/C/iEPMiner/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMed);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP2();
-                                    String confianzaCDMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMed = "corpus/EPM/C/DGCP/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMed);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1022,13 +1022,13 @@ public class epmControler extends Model {
                             switch (modeloSeleccionado) {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner2();
-                                    String confianzaDIMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMed = "corpus/EPM/D/iEPMiner/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMed);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP2();
-                                    String confianzaDDMed = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Med_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMed = "corpus/EPM/D/DGCP/Med_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMed);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1046,13 +1046,13 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner3();
 
-                                    String confianzaCIP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIP = "corpus/EPM/C/iEPMiner/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIP);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP3();
-                                    String confianzaCDP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDP = "corpus/EPM/C/DGCP/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDP);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1066,14 +1066,14 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner3();
                                     //reglas2 = oEPMUtilidades.obtenerReglasSI(pathModelo);
-                                    String confianzaDIP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIP = "corpus/EPM/D/iEPMiner/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIP);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP3();
 
-                                    String confianzaDDP = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Per_sol_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDP = "corpus/EPM/D/DGCP/Per_sol_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDP);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1092,14 +1092,14 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner4();
 
-                                    String confianzaCIN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIN = "corpus/EPM/C/iEPMiner/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIN);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP4();
 
-                                    String confianzaCDN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDN = "corpus/EPM/C/DGCP/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDN);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1113,14 +1113,14 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner4();
 
-                                    String confianzaDIN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIN = "corpus/EPM/D/iEPMiner/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIN);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP4();
 
-                                    String confianzaDDN = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\No_hosp\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDN = "corpus/EPM/D/DGCP/No_hosp/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDN);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1139,14 +1139,14 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner5();
 
-                                    String confianzaCIR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIR = "corpus/EPM/C/iEPMiner/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIR);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP5();
 
-                                    String confianzaCDR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDR = "corpus/EPM/C/DGCP/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDR);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1160,14 +1160,14 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner5();
 
-                                    String confianzaDIR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIR = "corpus/EPM/D/iEPMiner/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIR);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP5();
 
-                                    String confianzaDDR = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Rechazo_fam\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDR = "corpus/EPM/D/DGCP/Rechazo_fam/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDR);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1186,14 +1186,14 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner6();
 
-                                    String confianzaCIMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMCCNO = "corpus/EPM/C/iEPMiner/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMCCNO);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP6();
 
-                                    String confianzaCDMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMCCNO = "corpus/EPM/C/DGCP/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMCCNO);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1207,7 +1207,7 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner6();
 
-                                    String confianzaDIMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMCCNO = "corpus/EPM/D/iEPMiner/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner6();
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMCCNO);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
@@ -1215,7 +1215,7 @@ public class epmControler extends Model {
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP6();
 
-                                    String confianzaDDMCCNO = "C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_no_aut\\TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMCCNO = "corpus/EPM/D/DGCP/Mcc_no_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMCCNO);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1233,14 +1233,14 @@ public class epmControler extends Model {
 
                                     pathModelo = oConfApp.getPahtModel_c_iEPMiner7();
 
-                                    String confianzaCIMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/C/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCIMCC = "corpus/EPM/C/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCIMCC);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_c_DGCP7();
 
-                                    String confianzaCDMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/C/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaCDMCC = "corpus/EPM/C/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaCDMCC);
                                     reglas = oEPMUtilidades.obtenerReglasC(pathModelo, confianzaAll);
                                     break;
@@ -1254,14 +1254,14 @@ public class epmControler extends Model {
                                 case 1:
                                     pathModelo = oConfApp.getPahtModel_d_iEPMiner7();
 
-                                    String confianzaDIMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/D/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDIMCC = "corpus/EPM/D/iEPMiner/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDIMCC);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
                                 case 2:
                                     pathModelo = oConfApp.getPahtModel_d_DGCP7();
 
-                                    String confianzaDDMCC = "/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/EPM/D/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
+                                    String confianzaDDMCC = "corpus/EPM/D/DGCP/Mcc_aut/TRA_QUAC_CONFIDENCE0.txt";
                                     confianzaAll = oEPMUtilidades.obtenerConfianza(confianzaDDMCC);
                                     reglas = oEPMUtilidades.obtenerReglasD(pathModelo, confianzaAll);
                                     break;
@@ -1626,8 +1626,8 @@ public class epmControler extends Model {
     //Este método es llamado cuando muestra las reglas y crea el pdf con los parámetros, clase y conjunto de datos seleccionado
     public void crearPDF(int modeloseleccionado, List<Confianza> confianzaList) throws DocumentException, FileNotFoundException {
 
-        //FileOutputStream pdf = new FileOutputStream("D:\\Escritorio\\Reglas\\Reglas.pdf");
-        FileOutputStream pdf = new FileOutputStream("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\Reglas\\Reglas.pdf");
+        //FileOutputStream pdf = new FileOutputStream("D:/Escritorio/Reglas/Reglas.pdf");
+        FileOutputStream pdf = new FileOutputStream("corpus/Reglas.pdf");
 
         int algoritmo = modeloseleccionado;
         System.out.println("corpues : " + corpusSeleccionado + "  Algoritmo: " + algoritmo);
@@ -3920,7 +3920,7 @@ public class epmControler extends Model {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             //El parse()método analiza el archivo XML en un Document.
-            org.w3c.dom.Document documen = builder.parse(new File("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\epm-framework-master\\algorithmsLC.xml"));
+            org.w3c.dom.Document documen = builder.parse(new File("epm-framework-master/algorithmsLC.xml"));
             NodeList nodes = documen.getElementsByTagName("algorithm");
             for (int j = 0; j < nodes.getLength(); j++) {
                 Node raiz2 = nodes.item(j);

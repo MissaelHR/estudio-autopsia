@@ -36,7 +36,7 @@ up:
 # Detener y eliminar todos los servicios
 down:
 	@echo "Deteniendo y eliminando todos los servicios..."
-	docker-compose down
+	docker-compose stop
 
 # Mostrar logs de todos los contenedores
 logs:

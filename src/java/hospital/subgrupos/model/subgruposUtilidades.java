@@ -211,7 +211,7 @@ public class subgruposUtilidades {
     public List<datosGrafica> obtenerReglasC1(int claseSeleccionada, int medidaSeleccionada, List<ReglasSG> reglasSGList) throws Exception, Throwable {
         ArrayList<datosGrafica> datos = new ArrayList<>();
 
-        Ontology onto2 = DataFactory.createOntology(new File("/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/SD/C/SDMap/centro_hospitalario/matriz_binaria3.arff"));
+        Ontology onto2 = DataFactory.createOntology(new File("corpus/SD/C/SDMap/centro_hospitalario/matriz_binaria3.arff"));
         System.out.println("Instancias en conjunto de datos: " + onto2.getNumInstances());
         // ReglasSG rsg = new ReglasSG();
 
@@ -356,7 +356,7 @@ public class subgruposUtilidades {
     public List<datosGrafica> obtenerReglasD1(int claseSeleccionada, int medidaSeleccionada, List<ReglasSG> reglasSGList) throws Exception {
         ArrayList<datosGrafica> datos = new ArrayList<>();
 
-        Ontology onto = DataFactory.createOntology(new File("/Users/missaelhr/Documents/GitHub/EstudioAutopsiaFunciona-master/corpus/SD/D/SDMap/centro_hospitalario/vista_minable2.arff"));
+        Ontology onto = DataFactory.createOntology(new File("corpus/SD/D/SDMap/centro_hospitalario/vista_minable2.arff"));
         System.out.println("Instancias en conjunto de datos: " + onto.getNumInstances());
         // ReglasSG rsg = new ReglasSG();
 
