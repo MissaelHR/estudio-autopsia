@@ -90,7 +90,7 @@ public class epmUtilidades {
         PrintWriter pw = null;
         switch (clase) {
             case 1: //Frm_sol_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Frm_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Frm_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet = "@relation encuesta\n"
                         + "\n"
@@ -155,7 +155,7 @@ public class epmUtilidades {
                 }
                 break;
             case 2://med_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Med_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Med_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet1 = "@relation encuesta\n"
                         + "\n"
@@ -223,7 +223,7 @@ public class epmUtilidades {
 
             case 3://per_sol_aut
 
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Per_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Per_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet2 = "@relation encuesta\n"
                         + "\n"
@@ -292,7 +292,7 @@ public class epmUtilidades {
                 break;
 
             case 4://no_hosp
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\No_hosp\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/No_hosp/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet3 = "@relation encuesta\n"
                         + "\n"
@@ -362,7 +362,7 @@ public class epmUtilidades {
                 break;
 
             case 5://rechazo_fam
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Rechazo_fam\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Rechazo_fam/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet4 = "@relation encuesta\n"
                         + "\n"
@@ -428,7 +428,7 @@ public class epmUtilidades {
                 }
                 break;
             case 6://Mcc_no_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_no_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Mcc_no_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet5 = "@relation encuesta\n"
                         + "\n"
@@ -494,7 +494,7 @@ public class epmUtilidades {
                 }
                 break;
             case 7://mcc_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\iEPMiner\\Mcc_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/iEPMiner/Mcc_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
 
                 String dataSet6 = "@relation encuesta\n"
@@ -574,7 +574,7 @@ public class epmUtilidades {
 
         switch (clase) {
             case 1: //Frm_sol_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Frm_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Frm_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -670,7 +670,7 @@ public class epmUtilidades {
                 }
                 break;
             case 2://med_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Med_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Med_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -768,7 +768,7 @@ public class epmUtilidades {
                 break;
             case 3://per_sol_aut
 
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Per_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Per_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -866,7 +866,7 @@ public class epmUtilidades {
                 break;
 
             case 4://no_hosp
-                fichero = new FileWriter("DC:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\No_hosp\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/No_hosp/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -964,7 +964,7 @@ public class epmUtilidades {
                 break;
 
             case 5://rechazo_fam
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Rechazo_fam\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Rechazo_fam/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -1061,7 +1061,7 @@ public class epmUtilidades {
 
                 break;
             case 6://Mcc_no_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_no_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Mcc_no_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -1159,7 +1159,7 @@ public class epmUtilidades {
 
                 break;
             case 7://mcc_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\iEPMiner\\Mcc_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/iEPMiner/Mcc_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -1271,7 +1271,7 @@ public class epmUtilidades {
             DocumentBuilder builder = factory.newDocumentBuilder();
             //System.out.println("2");
             //El parse()método analiza el archivo XML en un Document.
-            org.w3c.dom.Document documen = builder.parse(new File("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\epm-framework-master\\algorithms.xml"));
+            org.w3c.dom.Document documen = builder.parse(new File("epm-framework-master/algorithms.xml"));
             NodeList nodes = documen.getElementsByTagName("algorithm");
             for (int j = 0; j < nodes.getLength(); j++) {
                 Node raiz2 = nodes.item(j);
@@ -1523,7 +1523,7 @@ public class epmUtilidades {
             //-----
             try {
                 //_-------
-                fichero = new FileWriter("C:/Users/Araceli/Desktop/MAESTRÍA/EstudioAutopsiaFunciona/corpus/reglas.doc");
+                fichero = new FileWriter("corpus/reglas.doc");
                 pw = new PrintWriter(fichero);
                 pw.println("____________________________Reglas obtenidas__________________________" + "\n\n");
                 //----------
@@ -1616,7 +1616,7 @@ public class epmUtilidades {
 
             try {
                 //_-------
-                fichero = new FileWriter("C:/Users/Araceli/Desktop/MAESTRÍA/EstudioAutopsiaFunciona/corpus/reglas.doc");
+                fichero = new FileWriter("corpus/reglas.doc");
                 pw = new PrintWriter(fichero);
                 //----------
                 int y = 0;
@@ -1705,7 +1705,7 @@ public class epmUtilidades {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             //El parse()método analiza el archivo XML en un Document.
-            org.w3c.dom.Document documen = builder.parse(new File("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\epm-framework-master\\algorithmsDGCP.xml"));
+            org.w3c.dom.Document documen = builder.parse(new File("epm-framework-master/algorithmsDGCP.xml"));
             NodeList nodes = documen.getElementsByTagName("algorithm");
             for (int j = 0; j < nodes.getLength(); j++) {
                 Node raiz2 = nodes.item(j);
@@ -1833,7 +1833,7 @@ public class epmUtilidades {
         PrintWriter pw = null;
         switch (clase) {
             case 1: //Frm_sol_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Frm_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Frm_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet = "@relation encuesta\n"
                         + "\n"
@@ -1894,7 +1894,7 @@ public class epmUtilidades {
                 }
                 break;
             case 2://med_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Med_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Med_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet1 = "@relation encuesta\n"
                         + "\n"
@@ -1959,7 +1959,7 @@ public class epmUtilidades {
                 break;
             case 3://per_sol_aut
 
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Per_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Per_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet2 = "@relation encuesta\n"
                         + "\n"
@@ -2024,7 +2024,7 @@ public class epmUtilidades {
                 break;
 
             case 4://no_hosp
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\No_hosp\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/No_hosp/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet3 = "@relation encuesta\n"
                         + "\n"
@@ -2094,7 +2094,7 @@ public class epmUtilidades {
                 break;
 
             case 5://rechazo_fam
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Rechazo_fam\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Rechazo_fam/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet4 = "@relation encuesta\n"
                         + "\n"
@@ -2158,7 +2158,7 @@ public class epmUtilidades {
                 }
                 break;
             case 6://Mcc_no_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_no_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Mcc_no_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 String dataSet5 = "@relation encuesta\n"
                         + "\n"
@@ -2222,7 +2222,7 @@ public class epmUtilidades {
                 }
                 break;
             case 7://mcc_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\D\\DGCP\\Mcc_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/D/DGCP/Mcc_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
 
                 String dataSet6 = "@relation encuesta\n"
@@ -2298,7 +2298,7 @@ public class epmUtilidades {
         PrintWriter pw = null;
         switch (clase) {
             case 1: //Frm_sol_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Frm_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Frm_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2395,7 +2395,7 @@ public class epmUtilidades {
                 }
                 break;
             case 2://med_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Med_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Med_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2492,7 +2492,7 @@ public class epmUtilidades {
                 break;
             case 3://per_sol_aut
 
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Per_sol_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Per_sol_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2589,7 +2589,7 @@ public class epmUtilidades {
                 break;
 
             case 4://no_hosp
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\No_hosp\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/No_hosp/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2686,7 +2686,7 @@ public class epmUtilidades {
                 break;
 
             case 5://rechazo_fam
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Rechazo_fam\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Rechazo_fam/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2782,7 +2782,7 @@ public class epmUtilidades {
                 }
                 break;
             case 6://Mcc_no_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_no_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Mcc_no_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
                 try {
                     sQuery = query;
@@ -2879,7 +2879,7 @@ public class epmUtilidades {
                 }
                 break;
             case 7://mcc_aut
-                fichero = new FileWriter("C:\\Users\\Araceli\\Desktop\\MAESTRÍA\\EstudioAutopsiaFunciona\\corpus\\EPM\\C\\DGCP\\Mcc_aut\\modelo.dat");
+                fichero = new FileWriter("corpus/EPM/C/DGCP/Mcc_aut/modelo.dat");
                 pw = new PrintWriter(fichero);
 
                 try {

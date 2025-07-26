@@ -34,43 +34,42 @@ public class configuracionAppControler{
     
 // para el conjunto c 2 algoritmos
 
-//iEPMiner
-    static final String pahtModel_c_iEPMiner1 = realPath + "EPM\\C\\iEPMiner\\Frm_sol_aut\\RULES.txt";
-    static final String pahtModel_c_iEPMiner2 = realPath + "EPM\\C\\iEPMiner\\Med_aut\\RULES.txt";
-    static final String pahtModel_c_iEPMiner3 = realPath + "EPM\\C\\iEPMiner\\Per_sol_aut\\RULES.txt";
-    static final String pahtModel_c_iEPMiner4 = realPath + "EPM\\C\\iEPMiner\\No_hosp\\RULES.txt";
-    static final String pahtModel_c_iEPMiner5 = realPath + "EPM\\C\\iEPMiner\\Rechazo_fam\\RULES.txt";
-    static final String pahtModel_c_iEPMiner6 = realPath + "EPM\\C\\iEPMiner\\Mcc_no_aut\\RULES.txt";
-    static final String pahtModel_c_iEPMiner7 = realPath + "EPM\\C\\iEPMiner\\Mcc_aut\\RULES.txt";
-    //DGCP-Tree
-    static final String pahtModel_c_DGCP1 = realPath + "EPM\\C\\DGCP\\Frm_sol_aut\\RULES.txt";
-    static final String pahtModel_c_DGCP2 = realPath + "EPM\\C\\DGCP\\Med_aut\\RULES.txt";
-    static final String pahtModel_c_DGCP3 = realPath + "EPM\\C\\DGCP\\Per_sol_aut\\RULES.txt";
-    static final String pahtModel_c_DGCP4 = realPath + "EPM\\C\\DGCP\\No_hosp\\RULES.txt";
-    static final String pahtModel_c_DGCP5 = realPath + "EPM\\C\\DGCP\\Rechazo_fam\\RULES.txt";
-    static final String pahtModel_c_DGCP6 = realPath + "EPM\\C\\DGCP\\Mcc_no_aut\\RULES.txt";
-    static final String pahtModel_c_DGCP7 = realPath + "EPM\\C\\DGCP\\Mcc_aut\\RULES.txt";
-    //SDMap
-      static final String pahtModel_c_SDMap = realPath + "";//reglas?
+// iEPMiner
+static final String pahtModel_c_iEPMiner1 = realPath + "EPM/C/iEPMiner/Frm_sol_aut/RULES.txt";
+static final String pahtModel_c_iEPMiner2 = realPath + "EPM/C/iEPMiner/Med_aut/RULES.txt";
+static final String pahtModel_c_iEPMiner3 = realPath + "EPM/C/iEPMiner/Per_sol_aut/RULES.txt";
+static final String pahtModel_c_iEPMiner4 = realPath + "EPM/C/iEPMiner/No_hosp/RULES.txt";
+static final String pahtModel_c_iEPMiner5 = realPath + "EPM/C/iEPMiner/Rechazo_fam/RULES.txt";
+static final String pahtModel_c_iEPMiner6 = realPath + "EPM/C/iEPMiner/Mcc_no_aut/RULES.txt";
+static final String pahtModel_c_iEPMiner7 = realPath + "EPM/C/iEPMiner/Mcc_aut/RULES.txt";
+// DGCP-Tree
+static final String pahtModel_c_DGCP1 = realPath + "EPM/C/DGCP/Frm_sol_aut/RULES.txt";
+static final String pahtModel_c_DGCP2 = realPath + "EPM/C/DGCP/Med_aut/RULES.txt";
+static final String pahtModel_c_DGCP3 = realPath + "EPM/C/DGCP/Per_sol_aut/RULES.txt";
+static final String pahtModel_c_DGCP4 = realPath + "EPM/C/DGCP/No_hosp/RULES.txt";
+static final String pahtModel_c_DGCP5 = realPath + "EPM/C/DGCP/Rechazo_fam/RULES.txt";
+static final String pahtModel_c_DGCP6 = realPath + "EPM/C/DGCP/Mcc_no_aut/RULES.txt";
+static final String pahtModel_c_DGCP7 = realPath + "EPM/C/DGCP/Mcc_aut/RULES.txt";
+// SDMap
+static final String pahtModel_c_SDMap = realPath + ""; // reglas?
 
-    // para el conjunto d 3 algoritmos
-    //iEPMiner
-    static final String pahtModel_d_iEPMiner1 = realPath + "EPM\\D\\iEPMiner\\Frm_sol_aut\\RULES.txt";
-    static final String pahtModel_d_iEPMiner2 = realPath + "EPM\\D\\iEPMiner\\Med_aut\\RULES.txt";
-    static final String pahtModel_d_iEPMiner3 = realPath + "EPM\\D\\iEPMiner\\Per_sol_aut\\RULES.txt";
-    static final String pahtModel_d_iEPMiner4 = realPath + "EPM\\D\\iEPMiner\\No_hosp\\RULES.txt";
-    static final String pahtModel_d_iEPMiner5 = realPath + "EPM\\D\\iEPMiner\\Rechazo_fam\\RULES.txt";
-    static final String pahtModel_d_iEPMiner6 = realPath + "EPM\\D\\iEPMiner\\Mcc_no_aut\\RULES.txt";
-    static final String pahtModel_d_iEPMiner7 = realPath + "EPM\\D\\iEPMiner\\Mcc_aut\\RULES.txt";
-    //DGCP-Tree
-    static final String pahtModel_d_DGCP1 = realPath + "EPM\\D\\DGCP\\Frm_sol_aut\\RULES.txt";
-    static final String pahtModel_d_DGCP2 = realPath + "EPM\\D\\DGCP\\Med_aut\\RULES.txt";
-    static final String pahtModel_d_DGCP3 = realPath + "EPM\\D\\DGCP\\Per_sol_aut\\RULES.txt";
-    static final String pahtModel_d_DGCP4 = realPath + "EPM\\D\\DGCP\\No_hosp\\RULES.txt";
-    static final String pahtModel_d_DGCP5 = realPath + "EPM\\D\\DGCP\\Rechazo_fam\\RULES.txt";
-    static final String pahtModel_d_DGCP6 = realPath + "EPM\\D\\DGCP\\Mcc_no_aut\\RULES.txt";
-    static final String pahtModel_d_DGCP7 = realPath + "EPM\\D\\DGCP\\Mcc_aut\\RULES.txt";
-    
+// para el conjunto d 3 algoritmos
+// iEPMiner
+static final String pahtModel_d_iEPMiner1 = realPath + "EPM/D/iEPMiner/Frm_sol_aut/RULES.txt";
+static final String pahtModel_d_iEPMiner2 = realPath + "EPM/D/iEPMiner/Med_aut/RULES.txt";
+static final String pahtModel_d_iEPMiner3 = realPath + "EPM/D/iEPMiner/Per_sol_aut/RULES.txt";
+static final String pahtModel_d_iEPMiner4 = realPath + "EPM/D/iEPMiner/No_hosp/RULES.txt";
+static final String pahtModel_d_iEPMiner5 = realPath + "EPM/D/iEPMiner/Rechazo_fam/RULES.txt";
+static final String pahtModel_d_iEPMiner6 = realPath + "EPM/D/iEPMiner/Mcc_no_aut/RULES.txt";
+static final String pahtModel_d_iEPMiner7 = realPath + "EPM/D/iEPMiner/Mcc_aut/RULES.txt";
+// DGCP-Tree
+static final String pahtModel_d_DGCP1 = realPath + "EPM/D/DGCP/Frm_sol_aut/RULES.txt";
+static final String pahtModel_d_DGCP2 = realPath + "EPM/D/DGCP/Med_aut/RULES.txt";
+static final String pahtModel_d_DGCP3 = realPath + "EPM/D/DGCP/Per_sol_aut/RULES.txt";
+static final String pahtModel_d_DGCP4 = realPath + "EPM/D/DGCP/No_hosp/RULES.txt";
+static final String pahtModel_d_DGCP5 = realPath + "EPM/D/DGCP/Rechazo_fam/RULES.txt";
+static final String pahtModel_d_DGCP6 = realPath + "EPM/D/DGCP/Mcc_no_aut/RULES.txt";
+static final String pahtModel_d_DGCP7 = realPath + "EPM/D/DGCP/Mcc_aut/RULES.txt";
 
     static final String pahtModel_d_Apriori = realPath + "d_Apriori.model";
     static final String pahtModel_d_Tertius = realPath + "d_Tertius.model";

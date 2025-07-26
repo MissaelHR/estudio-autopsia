@@ -1,0 +1,5 @@
+java.io.FileNotFoundException: /usr/local/tomcat/epm-framework-master/algorithmsDGCP.xml
+
+String rutaTra = "D:\\Documentos\\Tesis\\3er semestre\\Conjuntos de datos\\Nuevo conjunto\\InformaciónEncuestas2.dat";
+
+FileOutputStream pdf = new FileOutputStream("corpus/Reglas.pdf");
