@@ -6,6 +6,9 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copia la carpeta corpus al directorio corpus/ del contenedor
 COPY corpus/ corpus/
 
+# Copia la carpeta epm-framework al directorio epm-framework/ del contenedor
+COPY epm-framework-master/ epm-framework-master/
+
 # Copia tu archivo WAR al directorio de despliegue de Tomcat
 COPY dist/EstudioAutopsia.war /usr/local/tomcat/webapps/ROOT.war
 
