@@ -1,0 +1,6 @@
+algorithm = Tree-based JEP-C
+directory = /media/angel/Datos/DATASETS/classification_discretizado
+number of folds = 5
+Ordering = hybrid
+Alpha = 0.3
+Pattern Max Length = -1
