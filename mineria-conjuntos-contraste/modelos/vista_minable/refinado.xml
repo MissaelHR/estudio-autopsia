@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<experiment>
+  <parameter_sets>
+
+    <parameter_set name="Lift">
+      <param name="induction_measure">Lift</param>
+      <param name="pruning_measure">Lift</param>
+      <param name="voting_measure">Lift</param>
+		  <param name="minsupp_all">0.05</param>
+		  <param name="minsupp_new">0.05</param>
+		  <param name="max_neg2pos">2</param>
+		  <param name="max_passes_count">{{MAX_PASSES_COUNT}}</param>
+		  <param name="penalty_strength">0.5</param>
+		  <param name="penalty_saturation">0.2</param>
+      <param name="max_rule_count">{{MAX_RULE_COUNT}}</param>
+    </parameter_set>
+
+    <parameter_set name="WRAcc">
+      <param name="induction_measure">WRAcc</param>
+      <param name="pruning_measure">WRAcc</param>
+      <param name="voting_measure">WRAcc</param>
+		  <param name="minsupp_all">0.05</param>
+		  <param name="minsupp_new">0.05</param>
+		  <param name="max_neg2pos">2</param>
+		  <param name="max_passes_count">{{MAX_PASSES_COUNT}}</param>
+		  <param name="penalty_strength">0.5</param>
+		  <param name="penalty_saturation">0.2</param>
+      <param name="max_rule_count">{{MAX_RULE_COUNT}}</param>
+    </parameter_set>
+
+    <parameter_set name="Correlation">
+      <param name="induction_measure">Correlation</param>
+      <param name="pruning_measure">Correlation</param>
+      <param name="voting_measure">Correlation</param>
+		  <param name="minsupp_all">0.05</param>
+		  <param name="minsupp_new">0.05</param>
+		  <param name="max_neg2pos">2</param>
+		  <param name="max_passes_count">{{MAX_PASSES_COUNT}}</param>
+		  <param name="penalty_strength">0.5</param>
+		  <param name="penalty_saturation">0.2</param>
+      <param name="max_rule_count">{{MAX_RULE_COUNT}}</param>
+    </parameter_set>
+
+    <parameter_set name="Klosgen">
+      <param name="induction_measure">Klosgen</param>
+      <param name="pruning_measure">Klosgen</param>
+      <param name="voting_measure">Klosgen</param>
+		  <param name="minsupp_all">0.05</param>
+		  <param name="minsupp_new">0.05</param>
+		  <param name="max_neg2pos">2</param>
+		  <param name="max_passes_count">{{MAX_PASSES_COUNT}}</param>
+		  <param name="penalty_strength">0.5</param>
+		  <param name="penalty_saturation">0.2</param>
+      <param name="max_rule_count">{{MAX_RULE_COUNT}}</param>
+    </parameter_set>
+
+    <parameter_set name="RelativeRisk">
+      <param name="induction_measure">RelativeRisk</param>
+      <param name="pruning_measure">RelativeRisk</param>
+      <param name="voting_measure">RelativeRisk</param>
+		  <param name="minsupp_all">0.05</param>
+		  <param name="minsupp_new">0.05</param>
+		  <param name="max_neg2pos">2</param>
+		  <param name="max_passes_count">{{MAX_PASSES_COUNT}}</param>
+		  <param name="penalty_strength">0.5</param>
+		  <param name="penalty_saturation">0.2</param>
+      <param name="max_rule_count">{{MAX_RULE_COUNT}}</param>
+    </parameter_set>
+
+  </parameter_sets>
+  </parameter_sets>
+
+  <datasets>
+    <dataset>
+      <label>centro_hospitalario</label>
+      <contrast_attribute>centro_hospitalario</contrast_attribute>
+      <out_directory>./resultados/vista_minable/refinado/</out_directory>
+      <training>
+        <report_file>Resultados_Vista_Minable</report_file>
+        <train>
+          <in_file>vista_minable.arff</in_file>
+          <model_file>vista_minable.mdl</model_file>
+          <model_csv>vista_minable.csv</model_csv>
+        </train>
+      </training>
+    </dataset>
+  </datasets>
+</experiment>
+
