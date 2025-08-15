@@ -9,6 +9,9 @@ COPY corpus/ corpus/
 # Copia la carpeta epm-framework al directorio epm-framework/ del contenedor
 COPY epm-framework-master/ epm-framework-master/
 
+# Copia la carpeta mineria-conjuntos-contraste al directorio mineria-conjuntos-contraste/ del contenedor
+COPY mineria-conjuntos-contraste/ mineria-conjuntos-contraste/
+
 # Copia tu archivo WAR al directorio de despliegue de Tomcat
 COPY dist/EstudioAutopsia.war /usr/local/tomcat/webapps/ROOT.war
 
