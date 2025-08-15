@@ -6,3 +6,5 @@ String rutaTra = "D:\\Documentos\\Tesis\\3er semestre\\Conjuntos de datos\\Nuevo
 
 
 FileOutputStream pdf = new FileOutputStream("corpus/Reglas.pdf");
+
+org.w3c.dom.Document documen = builder.parse(new File("epm-framework-master/algorithmsLC.xml"));

@@ -32,7 +32,7 @@
                 <default>2</default> it goes from 1 to n 
             </parameter>
     </algorithm> -->
-        
+   <!--     
     <algorithm>
         <name>BCEP</name>
         <class>algorithms.bcep.BCEP_Model</class>
@@ -70,7 +70,7 @@
         </parameter>
     </algorithm>
 
-
+-->
     <algorithm>
         <name>iEPMiner</name>
         <class>algorithms.iepminer.IEPMiner</class>
@@ -103,7 +103,7 @@
         </parameter>
         
     </algorithm>
-
+<!--
     <algorithm>
         <name>Tree-based JEP-C</name>
         <class>algorithms.tree_based_jep.TreeBasedJEP</class>
@@ -183,7 +183,7 @@
             </domain>
             <default>0.01</default>
         </parameter>
-    </algorithm>
+    </algorithm> -->
     
 
     <!--
@@ -191,7 +191,7 @@
             <name>DGPC</name>
         </algorithm>
     -->
-
+<!--
     <algorithm>
         <name>EvAEP</name>
         <class>algorithms.evaep.EvAEP</class>
@@ -259,12 +259,12 @@
             </domain>
             <default>100</default>
         </parameter>
-    </algorithm>
+    </algorithm>  -->
     
     <!-- <algorithm>
         <name>EFEP-MOEA</name>
     </algorithm> -->
-    
+     <!-- 
     <algorithm>
         <name>Bagging</name>
         <class>algorithms.bagging.Bagging_Wrapper</class>
@@ -749,7 +749,7 @@
             <default>10</default>
         </parameter>
     </algorithm>
-    
+    -->
 </document>
 
 
